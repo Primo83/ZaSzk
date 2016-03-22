@@ -1,0 +1,4 @@
+services:
+#    wolnik_pupils.example:
+#        class: Wolnik\PupilsBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

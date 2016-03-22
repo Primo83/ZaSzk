@@ -1,0 +1,4 @@
+services:
+#    wolnik_homepage.example:
+#        class: Wolnik\HomepageBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

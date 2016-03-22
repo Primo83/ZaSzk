@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="XAMPP" uploadOnCheckin="546a9606-cd86-42c0-94fa-c31a2a384b49" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="XAMPP">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ZaSzk" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="XAMPP" />
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+wolnik_homepage:
+    resource: "@WolnikHomepageBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+wolnik_pupils:
+    resource: "@WolnikPupilsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
