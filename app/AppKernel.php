@@ -18,6 +18,11 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Wolnik\PupilsBundle\WolnikPupilsBundle(),
             new Wolnik\HomepageBundle\WolnikHomepageBundle(),
+            new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Craue\FormFlowBundle\CraueFormFlowBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
