@@ -11,3 +11,6 @@ wolnik_pupils:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+MopaBootstrapSandbox:
+    resource: "@MopaBootstrapSandboxBundle/Resources/config/routing.yml"

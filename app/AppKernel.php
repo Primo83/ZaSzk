@@ -23,6 +23,8 @@ class AppKernel extends Kernel
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Craue\FormFlowBundle\CraueFormFlowBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+            new Liip\ThemeBundle\LiipThemeBundle(),
+            new Mopa\Bundle\BootstrapSandboxBundle\MopaBootstrapSandboxBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

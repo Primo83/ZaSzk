@@ -5,23 +5,26 @@ imports:
     - { resource: "@WolnikPupilsBundle/Resources/config/services.yml" }
     - { resource: "@WolnikHomepageBundle/Resources/config/services.yml" }
 
+
 assetic:
     debug:          '%kernel.debug%'
     use_controller: '%kernel.debug%'
+    java: /usr/bin/java
     filters:
+        cssrewrite: ~
         less:
-            node: /usr/bin/nodejs
-            node_paths: [/opt/lessc/lib, /usr/lib/nodejs]
+            node: /home/primo/Programy/node/bin/node
+            node_paths: [/usr/local/lib/node_modules]
             apply_to: "\.less$"
         cssrewrite: ~
-        cssembed:
-            jar: %kernel.root_dir%/Resources/java/cssembed-0.3.6.jar
-            apply_to: "\.css$|\.less$"
-        yui_css:
-            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
-            apply_to: "\.css$"
-        yui_js:
-            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
+#        cssembed:
+#            jar: %kernel.root_dir%/Resources/java/cssembed-0.3.6.jar
+#            apply_to: "\.css$|\.less$"
+#        yui_css:
+#            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
+#            apply_to: "\.css$"
+#        yui_js:
+#            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -54,6 +57,9 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form:
+        resources:
+            - 'MopaBootstrapBundle:Form:fields.html.twig'
 
 # Doctrine Configuration
 doctrine:
@@ -86,5 +92,36 @@ swiftmailer:
     spool:     { type: memory }
 
 mopa_bootstrap:
-    form: ~  # Adds twig form theme  support
-    menu: ~  # enables twig helpers for menu
+    menu: ~
+    navbar: ~
+    form: ~
+    initializr:
+        meta:
+            title:        "MopaBootstrapBundle"
+            description:  "This is the Sandbox Site"
+            keywords:     "bootstrap getootstrap opabootstrap mopabootstrapbundle bootstrap bundle symfony2"
+            author_name:  "phiamo"
+            author_url:   "phiamo@googlemail.com"
+            nofollow:     false
+            noindex:      false
+        dns_prefetch:
+            - '//ajax.googleapis.com'
+        google:
+            wt: 'xxx'
+            analytics: 'UA-xxxxxxx-xx'
+        diagnostic_mode: false
+
+knp_menu:
+    providers:
+
+        builder_alias:        true
+
+        container_aware:      true
+
+    # use "twig: false" to disable the Twig extension and the TwigRenderer
+    twig:
+        template: knp_menu.html.twig
+    #  if true, enables the helper for PHP templates
+    templating: false
+    # the renderer to use, list is also available by default
+    default_renderer: twig
