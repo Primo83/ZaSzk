@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f3652f48fe404270144019c6e8261622",
-    "content-hash": "648f1de099f5e4854f3ca3433aef2926",
+    "hash": "5b584f74c0468be6ccf5dff9b71bfe5b",
+    "content-hash": "abfe8c016b9b3934fac6012a6dc0d743",
     "packages": [
         {
             "name": "craue/formflow-bundle",
@@ -1052,32 +1052,35 @@
         },
         {
             "name": "knplabs/knp-menu-bundle",
-            "version": "v2.0.0",
-            "target-dir": "Knp/Bundle/MenuBundle",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "bdfc95da5ff7e4e67f948aaa9ea5da835a3a9088"
+                "reference": "90aff8e39274d1225dfa3bb7b1dd4e47b7312dca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/bdfc95da5ff7e4e67f948aaa9ea5da835a3a9088",
-                "reference": "bdfc95da5ff7e4e67f948aaa9ea5da835a3a9088",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/90aff8e39274d1225dfa3bb7b1dd4e47b7312dca",
+                "reference": "90aff8e39274d1225dfa3bb7b1dd4e47b7312dca",
                 "shasum": ""
             },
             "require": {
-                "knplabs/knp-menu": "~2.0",
-                "symfony/framework-bundle": "~2.0"
+                "knplabs/knp-menu": "~2.1",
+                "symfony/framework-bundle": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.4|~3.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Knp\\Bundle\\MenuBundle": ""
+                "psr-4": {
+                    "Knp\\Bundle\\MenuBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1102,7 +1105,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2014-08-01 09:57:23"
+            "time": "2015-12-15 12:06:23"
         },
         {
             "name": "knplabs/knp-paginator-bundle",
@@ -1303,16 +1306,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.18.1",
+            "version": "1.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45"
+                "reference": "064b38c16790249488e7a8b987acf1c9d7383c09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
-                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/064b38c16790249488e7a8b987acf1c9d7383c09",
+                "reference": "064b38c16790249488e7a8b987acf1c9d7383c09",
                 "shasum": ""
             },
             "require": {
@@ -1327,13 +1330,13 @@
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
                 "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
                 "phpunit/phpunit": "~4.5",
                 "phpunit/phpunit-mock-objects": "2.3.0",
                 "raven/raven": "^0.13",
                 "ruflin/elastica": ">=0.90 <3.0",
-                "swiftmailer/swiftmailer": "~5.3",
-                "videlalvaro/php-amqplib": "~2.4"
+                "swiftmailer/swiftmailer": "~5.3"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -1342,11 +1345,11 @@
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
                 "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "raven/raven": "Allow sending log messages to a Sentry server",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
@@ -1377,7 +1380,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-03-13 16:08:35"
+            "time": "2016-04-02 13:12:58"
         },
         {
             "name": "mopa/barcode-bundle",
@@ -1559,21 +1562,21 @@
         },
         {
             "name": "mopa2/bootstrap-sandbox-bundle2",
-            "version": "v2.2.1-alpha1",
+            "version": "v2.2.2",
             "target-dir": "Mopa/Bundle/BootstrapSandboxBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Primo83/MopaBootstrapSandboxBundle.git",
-                "reference": "d5444bc5351f5c9fb2bbefa24a29dceb823cc404"
+                "url": "https://github.com/Primo83/MopaBootstrapSandboxBundle2.git",
+                "reference": "f2fc6fc3c521d8104d0728d7fe211b1ed7e96bdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Primo83/MopaBootstrapSandboxBundle/zipball/d5444bc5351f5c9fb2bbefa24a29dceb823cc404",
-                "reference": "d5444bc5351f5c9fb2bbefa24a29dceb823cc404",
+                "url": "https://api.github.com/repos/Primo83/MopaBootstrapSandboxBundle2/zipball/f2fc6fc3c521d8104d0728d7fe211b1ed7e96bdf",
+                "reference": "f2fc6fc3c521d8104d0728d7fe211b1ed7e96bdf",
                 "shasum": ""
             },
             "require": {
-                "knplabs/knp-menu-bundle": "2.0.0",
+                "knplabs/knp-menu-bundle": "2.1.1",
                 "liip/theme-bundle": "dev-master",
                 "mopa/bootstrap-bundle": "3.*@dev",
                 "php": ">=5.3.2"
@@ -1584,7 +1587,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-maste": "2.2.1-dev"
                 }
             },
             "autoload": {
@@ -1615,7 +1618,8 @@
                 "sandbox",
                 "template"
             ],
-            "time": "2016-03-31 12:22:39"
+            "abandoned": "https://github.com/Primo83/MopaBootstrapSandboxBundle2.git",
+            "time": "2016-04-07 14:01:22"
         },
         {
             "name": "paragonie/random_compat",
@@ -3022,8 +3026,7 @@
     "stability-flags": {
         "mopa/barcode-bundle": 20,
         "knplabs/knp-menu": 20,
-        "liip/theme-bundle": 20,
-        "mopa2/bootstrap-sandbox-bundle2": 15
+        "liip/theme-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

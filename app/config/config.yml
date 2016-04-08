@@ -5,11 +5,10 @@ imports:
     - { resource: "@WolnikPupilsBundle/Resources/config/services.yml" }
     - { resource: "@WolnikHomepageBundle/Resources/config/services.yml" }
 
-
 assetic:
     debug:          '%kernel.debug%'
-    use_controller: '%kernel.debug%'
-    java: /usr/bin/java
+    use_controller: false
+#    java: /usr/bin/java
     filters:
         cssrewrite: ~
         less:
@@ -18,15 +17,15 @@ assetic:
             apply_to: "\.less$"
         cssrewrite: ~
 #        cssembed:
-#            jar: %kernel.root_dir%/Resources/java/cssembed-0.3.6.jar
+#            jar: %kernel.root_dir%/Resources/java/cssembed-0.5.0.jar
 #            apply_to: "\.css$|\.less$"
 #        yui_css:
 #            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
 #            apply_to: "\.css$"
-        yui_js:
-            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
+#        yui_js:
+#            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
 
-# Put parameters here that don't need to change on each machine where the app is deployed
+## Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: pl
