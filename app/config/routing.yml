@@ -1,7 +1,7 @@
-wolnik_homepage:
-    resource: "@WolnikHomepageBundle/Controller/"
-    type:     annotation
-    prefix:   /
+#wolnik_homepage:
+#    resource: "@WolnikHomepageBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
 
 wolnik_pupils:
     resource: "@WolnikPupilsBundle/Controller/"

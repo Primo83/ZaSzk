@@ -1,5 +1,5 @@
 <?php
-namespace Wolnik\HomepageBundle\Menu;
+namespace AppBundle\Menu;
 
 use Knp\Menu\FactoryInterface;
 /**
@@ -18,14 +18,14 @@ class Builder
         ));
         $layout = $menu->addChild('Layout', array(
             'icon' => 'home',
-            'route' => 'homepage',
+            'route' => 'home_page',
         ));
         $dropdown = $menu->addChild('Forms', array(
             'dropdown' => true,
             'caret' => true,
         ));
         $dropdown->addChild('Examples', array('route' => 'pupils'));
-        $menu->addChild('Menus & Navbars', array('route' => 'homepage'));
+        $menu->addChild('Menus & Navbars', array('route' => 'pupils'));
         $menu->addChild('Macros for components', array('route' => 'pupils'));
         return $menu;
     }

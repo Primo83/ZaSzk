@@ -3,7 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: "@WolnikPupilsBundle/Resources/config/services.yml" }
-    - { resource: "@WolnikHomepageBundle/Resources/config/services.yml" }
+#    - { resource: "@WolnikHomepageBundle/Resources/config/services.yml" }
 
 
 assetic:

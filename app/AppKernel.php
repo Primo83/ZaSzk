@@ -17,7 +17,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new Wolnik\PupilsBundle\WolnikPupilsBundle(),
-            new Wolnik\HomepageBundle\WolnikHomepageBundle(),
+//            new Wolnik\HomepageBundle\WolnikHomepageBundle(),
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
