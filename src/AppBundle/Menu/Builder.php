@@ -16,17 +16,19 @@ class Builder
         $menu = $factory->createItem('root', array(
             'navbar' => true,
         ));
-        $layout = $menu->addChild('Layout', array(
+        $layout = $menu->addChild('Homepage', array(
             'icon' => 'home',
             'route' => 'home_page',
         ));
-        $dropdown = $menu->addChild('Forms', array(
+        $dropdown = $menu->addChild('Studenci', array(
             'dropdown' => true,
             'caret' => true,
         ));
-        $dropdown->addChild('Examples', array('route' => 'pupils'));
-        $menu->addChild('Menus & Navbars', array('route' => 'pupils'));
-        $menu->addChild('Macros for components', array('route' => 'pupils'));
+        $dropdown->addChild('Dodaj', array('route' => 'pupils'));
+        $dropdown->addChild('Grupy', array('route' => 'pupils'));
+
+//        $menu->addChild('Menus & Navbars', array('route' => 'pupils'));
+//        $menu->addChild('Macros for components', array('route' => 'pupils'));
         return $menu;
     }
     public function createNavbarsSubnavMenu(FactoryInterface $factory, array $options)

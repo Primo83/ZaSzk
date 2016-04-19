@@ -14,6 +14,8 @@ web_profiler:
 
 assetic:
     use_controller: true
+    filters:
+       cssrewrite: ~
 
 monolog:
     handlers:
